@@ -3,7 +3,7 @@ package router
 import (
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/net/ghttp"
-	"github.com/gogf/onvif-gf-demos/app/api"
+	"onvif-gf-demos/app/api"
 )
 
 // 你可以将路由注册放到一个文件中管理，
@@ -14,8 +14,8 @@ func init() {
 	// 分组路由注册方式
 	s.Group("/", func(group *ghttp.RouterGroup) {
 		group.Group("/", func(group *ghttp.RouterGroup) {
-			group.ALL("/device/discovery", api.Device.DeviceDiscovery)
-			group.ALL("/device/new", api.Device.NewDevice)
+			group.GET("/api/discovery", api.ONVIF.Discovery)
+			group.POST("/api/:service/:method", api.ONVIF.PostMethod)
 		})
 	})
 }

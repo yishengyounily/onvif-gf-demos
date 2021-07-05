@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/gogf/gf/frame/g"
-	_ "github.com/gogf/onvif-gf-demos/boot"
-	_ "github.com/gogf/onvif-gf-demos/router"
+	_ "onvif-gf-demos/boot"
+	_ "onvif-gf-demos/router"
 )
 
 // @title       `gf-demo`示例服务API

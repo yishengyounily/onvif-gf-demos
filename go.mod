@@ -1,7 +1,8 @@
-module github.com/gogf/onvif-gf-demos
+module onvif-gf-demos
 
 require (
 	github.com/beevik/etree v1.1.0
+	github.com/gin-gonic/gin v1.7.2 // indirect
 	github.com/gogf/gf v1.16.2
 	github.com/gogf/swagger v1.2.0
 	github.com/gorilla/websocket v1.4.2 // indirect
@@ -13,4 +14,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.0-20200605160147-a5ece683394c // indirect
 )
 
-go 1.11
+go 1.16
